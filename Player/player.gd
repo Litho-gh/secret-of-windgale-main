@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 signal healthChanged
 
-@export var speed: int = 45
+@export var speed: int = 200 # was 45
 @onready var animations = $Sprite2D/AnimationPlayer
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
@@ -17,8 +17,7 @@ func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = moveDirection * speed
 
-		
-		
+
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("interact"):
@@ -26,7 +25,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		if actionables.size() > 0:
 			actionables[0].action()
 			return
-
 
 
 func updateAnimation():
@@ -61,3 +59,5 @@ func _physics_process(delta):
 		move_and_slide()
 		handleCollision()
 		updateAnimation()
+		if Input.is_action_just_pressed("toggle_inventory"):
+			inventory.print_contents()

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://1ci0udi48072" path="res://menu.gd" id="1_r1q1u"]
 [ext_resource type="FontFile" uid="uid://bfaglln45ok5w" path="res://Art/minecraft_font.ttf" id="2_16q67"]
-[ext_resource type="Texture2D" uid="uid://bylg5fs853x0c" path="res://Art/Screenshot 2025-03-22 230636.png" id="2_sbixa"]
+[ext_resource type="Texture2D" uid="uid://bxf36yv72ful8" path="res://Art/secret of windgale title screen.png" id="2_m1ans"]
 [ext_resource type="Texture2D" uid="uid://byfptstvq823j" path="res://Art/Secret_of_Windgale.png" id="3_m1ans"]
 
 [sub_resource type="Theme" id="Theme_16q67"]
@@ -26,10 +26,11 @@ z_index = -1
 
 [node name="TextureRect" type="TextureRect" parent="Background"]
 z_index = -1
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1146.0
+offset_bottom = 662.0
 scale = Vector2(0.844634, 0.792896)
-texture = ExtResource("2_sbixa")
+texture = ExtResource("2_m1ans")
+expand_mode = 3
 
 [node name="Title" type="Node2D" parent="."]
 
