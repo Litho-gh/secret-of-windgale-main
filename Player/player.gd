@@ -5,8 +5,10 @@ signal healthChanged
 @export var speed: int = 200 # was 45
 @onready var animations = $Sprite2D/AnimationPlayer
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
+@onready var weapon = $weapons
 
-@export var maxHealth = 10
+
+@export var maxHealth = 4
 @onready var currentHealth: int = maxHealth
 
 @export var inventory: Inventory

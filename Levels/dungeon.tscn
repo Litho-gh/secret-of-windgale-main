@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://bvlvq2i3n7t7o"]
+[gd_scene load_steps=16 format=4 uid="uid://bvlvq2i3n7t7o"]
 
 [ext_resource type="Texture2D" uid="uid://cxs7ltsn2f07h" path="res://Art/Free Dungeon - Fantasy Dreamland/48x48/FD_Dungeon_Free.png" id="1_6elmv"]
+[ext_resource type="Script" uid="uid://r1vllngonb60" path="res://Levels/dungeon.gd" id="1_kp511"]
 [ext_resource type="PackedScene" uid="uid://crhi7te13gxj5" path="res://Player/player.tscn" id="2_7npqr"]
 [ext_resource type="PackedScene" uid="uid://dn4f46qjae2uj" path="res://actionable.tscn" id="3_gk7yw"]
 [ext_resource type="Resource" uid="uid://mdmvjbi7ruee" path="res://Dialogue Manager/dialogue.dialogue" id="4_n1138"]
@@ -5197,6 +5198,7 @@ radius = 14.3697
 radius = 63.7887
 
 [node name="Dungeon" type="Node2D"]
+script = ExtResource("1_kp511")
 
 [node name="Floor1" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qu0b2")
@@ -5250,13 +5252,6 @@ shape = SubResource("CircleShape2D_6tvym")
 process_mode = 3
 script = ExtResource("7_332j8")
 
-[node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("8_kp511")]
-z_index = 3
-anchors_preset = 0
-anchor_left = 0.0
-anchor_right = 0.0
-grow_horizontal = 1
-
 [node name="InventoryGui" parent="CanvasLayer" instance=ExtResource("9_fsdug")]
 visible = false
 custom_minimum_size = Vector2(136, 90)
@@ -5271,6 +5266,13 @@ offset_right = 232.5
 offset_bottom = 135.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("8_kp511")]
+z_index = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+grow_horizontal = 1
 
 [connection signal="body_entered" from="Path to Dungeon 2" to="Path to Dungeon 2" method="_on_body_entered"]
 [connection signal="body_exited" from="Path to Dungeon 2" to="Path to Dungeon 2" method="_on_body_exited"]

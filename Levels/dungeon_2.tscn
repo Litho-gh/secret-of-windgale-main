@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://bq3u5vk6ks8yn"]
+[gd_scene load_steps=16 format=4 uid="uid://bq3u5vk6ks8yn"]
 
 [ext_resource type="Texture2D" uid="uid://cxs7ltsn2f07h" path="res://Art/Free Dungeon - Fantasy Dreamland/48x48/FD_Dungeon_Free.png" id="1_j61tq"]
+[ext_resource type="Script" uid="uid://duakh2qe1tx8g" path="res://Levels/dungeon_2.gd" id="1_y1d8a"]
 [ext_resource type="Texture2D" uid="uid://cwgxim7vsysq" path="res://Art/Cute_Fantasy_Free/Outdoor decoration/Chest.png" id="2_mna1x"]
 [ext_resource type="Script" uid="uid://dc3lfhpch18tv" path="res://Levels/path_to_dungeon_3.gd" id="3_mna1x"]
 [ext_resource type="PackedScene" uid="uid://crhi7te13gxj5" path="res://Player/player.tscn" id="4_4v7us"]
@@ -5567,6 +5568,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_je4ig")
 
 [node name="dungeon2" type="Node2D"]
+script = ExtResource("1_y1d8a")
 
 [node name="Floor2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_je4ig")
