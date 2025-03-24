@@ -5251,6 +5251,7 @@ process_mode = 3
 script = ExtResource("7_332j8")
 
 [node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("8_kp511")]
+z_index = 3
 anchors_preset = 0
 anchor_left = 0.0
 anchor_right = 0.0
@@ -5275,3 +5276,5 @@ grow_vertical = 2
 [connection signal="body_exited" from="Path to Dungeon 2" to="Path to Dungeon 2" method="_on_body_exited"]
 [connection signal="body_entered" from="Path to Windgale" to="Path to Windgale" method="_on_body_entered"]
 [connection signal="body_exited" from="Path to Windgale" to="Path to Windgale" method="_on_body_exited"]
+[connection signal="closed" from="CanvasLayer/InventoryGui" to="CanvasLayer/InventoryGui" method="_on_closed"]
+[connection signal="opened" from="CanvasLayer/InventoryGui" to="CanvasLayer/InventoryGui" method="_on_opened"]

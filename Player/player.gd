@@ -12,6 +12,7 @@ signal healthChanged
 @export var inventory: Inventory
 
 var is_sprinting = false
+var is_alive = true
 
 func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -50,8 +51,8 @@ func _on_hurt_box_area_entered(area):
 		area.collect(inventory)
 	if area.name == "HitBox":
 		currentHealth -= 1
-		if currentHealth < 0:
-			currentHealth = maxHealth
+		if currentHealth <= 0: # if you're dead
+			get_tree().change_scene_to_file("res://Levels/death_screen.tscn")
 		healthChanged.emit(currentHealth)
 
 func _physics_process(delta):
@@ -59,5 +60,3 @@ func _physics_process(delta):
 		move_and_slide()
 		handleCollision()
 		updateAnimation()
-		if Input.is_action_just_pressed("toggle_inventory"):
-			inventory.print_contents()

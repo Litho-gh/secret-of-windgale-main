@@ -25,3 +25,11 @@ func close():
 	visible = false
 	isOpen = false
 	closed.emit()
+
+
+func _on_opened() -> void:
+	pass # Replace with function body.
+
+
+func _on_closed() -> void:
+	pass # Replace with function body.
