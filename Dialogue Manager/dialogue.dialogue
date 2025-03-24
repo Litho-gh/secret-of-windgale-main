@@ -31,3 +31,10 @@ Also do not forget to rest between dungeon rooms to keep your vitality in tip to
 ~ dungeon
 Scary Sign: [wave] [speed=0.5]ABANDON ALL HOPE, YE WHO ENTER HERE
 => END
+
+~ ending
+Mysterious Button: The mounds of gold and jewels in this room are unlike any wealth held by any major city in history.
+Your quest accomplished, you may choose to keep this wealth for yourself, never telling a soul of the riches you acquired here, or share it with the people of Windgale and the surrounding towns in hopes of improving the townsfolk's lives.
+Either way it'll be quite the task to transport all this coin out of the dungeon. 
+Proceed to the next room to claim your prize.
+=> END

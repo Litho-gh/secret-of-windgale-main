@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkqjbj5ea7dob"
+path="res://.godot/imported/Path to Lake Land.ogg-5cadc1145b2aaf03a6582891e1136657.oggvorbisstr"
+
+[deps]
+
+source_file="res://Art/Path to Lake Land.ogg"
+dest_files=["res://.godot/imported/Path to Lake Land.ogg-5cadc1145b2aaf03a6582891e1136657.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

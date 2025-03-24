@@ -4103,6 +4103,8 @@ tile_set = SubResource("TileSet_3ty5n")
 [node name="Player" parent="BaseGround" instance=ExtResource("1_up8ek")]
 z_index = 0
 position = Vector2(311, 427)
+speed = 200
+maxHealth = 4
 
 [node name="Camera2D" type="Camera2D" parent="BaseGround/Player"]
 position_smoothing_enabled = true
@@ -4196,7 +4198,7 @@ tile_map_data = PackedByteArray("AAAJABkABgALAAEAAAAJABoABgALAAIAAAAJABsABgALAAM
 tile_set = SubResource("TileSet_nxa8a")
 
 [node name="Collectables" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAARACEAAAAAAAAAAQARACIAAAAAAAAAAQABAC4AAAAAAAAAAQAkACwAAAAAAAAAAQAlACwAAAAAAAAAAQAzACsAAAAAAAAAAQAmABcAAAAAAAAAAQAlABcAAAAAAAAAAQBMACcAAAAAAAAAAQA9ADQAAAAAAAAAAQA4AAoAAAAAAAAAAQBHAAQAAAAAAAAAAQACAAQAAAAAAAAAAQADAAUAAAAAAAAAAQAjAB4AAAAAAAAAAgAeAC0AAAAAAAAAAgAUABwAAAAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAABAC4AAAAAAAAAAQAUABwAAAAAAAAAAgA=")
 tile_set = SubResource("TileSet_0ooie")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

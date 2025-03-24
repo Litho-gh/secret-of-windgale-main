@@ -48,6 +48,7 @@ func handleCollision():
 		var collider = collision.get_collider()
 		print_debug(collider.name)
 
+
 func _on_hurt_box_area_entered(area):
 	if area.has_method("collect"):
 		area.collect(inventory)
